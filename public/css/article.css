@@ -1,0 +1,57 @@
+.description{
+    margin-bottom:20px;
+    background: url("../res/img/bg-table.jpg") repeat;
+    padding: 15px;
+    color: white;
+    line-height: 1.5;
+}
+.article{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: url("../res/img/bg-stone-bricks.jpg") repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.article-pic{
+    width: 50%;
+    min-width: 250px;
+}
+.header-article,.footer-article{
+    background: url("../res/img/bg-hedaer.jpg") repeat;
+    padding: 15px;
+    width: 100%;
+    color: white;
+    height: fit-content;
+    text-decoration: none;
+    font-size: 12px;
+}
+.header-article{
+    margin-bottom: 25px;
+    display: block;
+}
+.header-article:hover{
+    text-decoration: underline;
+}
+.footer-article{
+    margin-top: 25px;
+}
+.content-article{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content-article>*{
+    margin-top: 25px;
+}
+.footer-article{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}

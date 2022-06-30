@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'main-menu';
+    src: url('../res/fonts/main-menu.eot');
+    src: local('☺'), url('../res/fonts/main-menu.woff') format('woff'), url('../res/fonts/main-menu.ttf') format('truetype'), url('../res/fonts/main-menu.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: "main-menu";
+    background: url("../res/img/bg.png") repeat;
+}
+body>*{
+    border-radius: 5px;
+    position:relative;
+    padding:1em;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+header,footer{
+    background: url("../res/img/bg-hedaer.jpg") repeat;
+    /*height: 200px;*/
+    height: fit-content;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+footer>*{
+    min-width: 250px;
+    display: block;
+    width: 300px;
+    /*border: 1px solid red;*/
+    line-height: 1.5;
+}
+footer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    /*height: fit-content;*/
+    margin-bottom: 20px;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-link{
+    color: orange;
+    text-decoration: none;
+}
+.footer-link:hover{
+    text-decoration: underline;
+}
+.site-logo{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.site-logo>img{
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+
+}
+.site-logo>h1{
+    color: white;
+    line-height: 50px;
+}
+@media screen and (max-width: 1024px) {
+    .site-logo>h1{
+        font-size: 20pt;
+    }
+    .site-logo{
+        width: 270px;
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.button{
+    /*background: #808080;*/
+    background: url("../res/img/bg-button.jpg") repeat;
+    border: 2px ridge black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.button:active{
+    background: #808080;
+}
+.active-btn-page{
+    background: url("../res/img/btn-page-bg.png") repeat;
+}
+.links-page{
+    /*border: 1px solid red;*/
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: url("../res/img/bg-stone-bricks.jpg") repeat;
+}
+.links-page>a{
+    padding: 7px;
+}
+/*.buttons:last-child{*/
+/*    background: url("../res/img/custom-btn.png") repeat;*/
+/*}*/
+.menu-btn,.user-btn{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.button-reg,.button-out{
+    background: url("../res/img/custom-btn.png") repeat;
+}
+.button-login{
+
+    background: url("../res/img/custom-btn2.png") repeat;
+}
+/* ANIMATION */
+
+.site-logo,.button:last-of-type,.button:nth-last-child(2){
+    position: relative;
+    overflow: hidden;
+    /*display: block;*/
+}
+.site-logo:before,.button:last-of-type:before,.button:nth-last-child(2):before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    /*background-color: rgba(255,255,255,0.1);*/
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.15),
+    rgba(249, 245, 247, 0.14), rgba(243, 235, 240, 0.14),
+    rgba(237, 226, 232, 0.13), rgba(231, 216, 225, 0.12),
+    rgba(225, 206, 217, 0.11), rgba(219, 196, 210, 0.11),
+    rgba(213, 186, 202, 0.1), rgba(207, 176, 195, 0.09),
+    rgba(201, 167, 187, 0.08), rgba(195, 157, 180, 0.08),
+    rgba(189, 147, 172, 0.07));
+    height: 100%;
+    transform: translateX(-4em) skew(-45deg);
+    animation: move-light 2s infinite;
+}
+
+
+@keyframes move-light {
+    from {
+        transform: translateX(-4em) skew(-45deg);
+    }
+    to {
+        transform: translateX(30em) skew(-45deg);
+    }
+
+
+}
+/* ANIMATION */

@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'main-menu';
+    src: url('../res/fonts/main-menu.eot');
+    src: local('☺'), url('../res/fonts/main-menu.woff') format('woff'), url('../res/fonts/main-menu.ttf') format('truetype'), url('../res/fonts/main-menu.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.bg-vid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+body{
+    background: url("../res/img/bg-menu.jpg") repeat;
+    overflow: hidden;
+    font-family: "main-menu";
+    color: white;
+}
+.wrapper{
+    width: 1200px;
+    max-width: 100%;
+    height: 100%;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    /*#a0a0a0*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.button{
+    /*background: #808080;*/
+    background: url("../res/img/bg-button.jpg") repeat;
+    border: 2px ridge black;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+.button:active{
+    background: #808080;
+}
+.logo{
+    width:500px;
+    height: 280px;
+    /*border: 1px solid red;*/
+    margin-bottom: 50px;
+    max-width: 100%;
+
+}
+.buttons{
+    width: 300px;
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*flex-direction: column;*/
+}
+.msg-good{
+    background-color: #60a960;
+    border: 2px solid green;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+}
+.msg-bad{
+    background-color: #ff887c;
+    border: 2px solid red;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    color: red;
+}
+/*.bottom-text{*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    height: 50px;*/
+/*}*/
+/*.left{*/
+/*    !*text-align: left;*!*/
+/*    !*margin-right: auto;*!*/
+/*    !*margin-top: auto;*!*/
+/*}*/
+/*.right{*/
+/*    margin-left: auto;*/
+/*    */
+
+/*}*/
+/*ANIMATION*/
+.tricks {
+    width: 300px;
+    height: 100px;
+    /*background-color: #00f;*/
+    /*border-radius: 50%;*/
+    transform: scale(.85);
+    animation: pulse 2s ease-in-out infinite;
+    color: yellow;
+    font-weight: bold;
+    letter-spacing: 5px;
+    /*transform: rotate(45deg);*/
+}
+.rotate_trick{
+    position: absolute;
+    top: 120px;
+    left: 690px;
+    transform: rotate(-25deg);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(.85);
+    }
+    50% {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.85);
+    }
+}

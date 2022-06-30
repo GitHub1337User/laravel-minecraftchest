@@ -1,0 +1,111 @@
+.comment-form{
+    padding: 20px;
+    height: fit-content;
+    border-radius: 5px;
+    min-width: 250px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url("../res/img/bg-hedaer.jpg") repeat;
+}
+.button-comment{
+    font-family: "main-menu";
+    /*background: #808080;*/
+    background: url("../res/img/custom-btn.png") repeat;
+    border: 2px ridge black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: white;
+    margin-left: 5px;
+}
+.button-comment:active{
+    background: #808080;
+}
+.label-comment {
+    padding-left: 15px;
+    color: white;
+}
+
+.area-comment{
+    margin-top: 20px;
+    font-family: "main-menu";
+    /*background-color: #858585;*/
+    background: url("../res/img/bg-button.jpg") repeat;
+    padding: 15px;
+    outline: none;
+    color: white;
+    border: 2px ridge white;
+    resize: none;
+}
+.wrap-comment{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.comment-zone{
+    width: 100%;
+    min-width: 250px;
+    max-width: 100%;
+    height: fit-content;
+    /*overflow-y: scroll;*/
+    background: url("../res/img/bg-table.jpg") repeat;
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    display: flex;
+    width: 100%;
+    /*max-width: 120px;*/
+    min-width: 50px;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+h4{
+    margin-top: 15px;
+    word-wrap: break-word;
+}
+.user>img{
+    min-width: 50px;
+    width: 100%;
+    max-width: 80px;
+    border: 2px solid darkviolet;
+}
+.info-comment{
+    margin-bottom: 20px;
+}
+h5{
+    word-wrap: break-word;
+    color: black;
+}
+.user>h4{
+
+    color: black;
+
+}
+.text-comment{
+    margin-left: 15px;
+    width: 100%;
+    height: fit-content;
+    min-height: 50px;
+    line-height: 1.5;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+
+}
